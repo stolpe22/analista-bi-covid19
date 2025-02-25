@@ -1,0 +1,459 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"public covid_data\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "public covid_data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "lineageTag": "ffe28baf-d206-41f8-bf3a-e472fed6c5f3",
+            "sourceColumn": "id",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "fips",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ea3aeb1b-ade1-427b-a0f1-55c7efcaf27d",
+            "sourceColumn": "fips",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "admin2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72286e4e-4973-4f9f-8498-e3538b7be213",
+            "sourceColumn": "admin2",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "province_state",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db0b556c-2c54-45d9-a141-67940ac03bd4",
+            "sourceColumn": "province_state",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country_region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "879406b0-cf83-4070-a87e-a1ad5020d5c4",
+            "sourceColumn": "country_region",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "last_update",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "a55ad1de-336b-4ccf-9c57-3b46d728863c",
+            "sourceColumn": "last_update",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2650f516-3c00-46ad-b228-a2f3ab742bcb",
+            "sourceColumn": "lat",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "long_",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ff00587c-e529-46f1-81cf-425609834716",
+            "sourceColumn": "long_",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "confirmed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f5cf1d71-04ed-4899-a4c5-ef9fc32efe0a",
+            "sourceColumn": "confirmed",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "deaths",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bf4922c7-163f-437e-bbb9-b1f83f6499d0",
+            "sourceColumn": "deaths",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recovered",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4ec5788f-8a3a-46d8-8875-cfb4c64a8721",
+            "sourceColumn": "recovered",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "active",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "565fd816-1369-4f4c-8f33-19f75e19e704",
+            "sourceColumn": "active",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "combined_key",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "628cee25-63ce-4ab5-befc-2137ebf43890",
+            "sourceColumn": "combined_key",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "incident_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "aa67db95-fcce-4021-9a7d-175a248037fe",
+            "sourceColumn": "incident_rate",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "case_fatality_ratio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fa1d07cb-36f5-4dab-bb22-a433e7433aa8",
+            "sourceColumn": "case_fatality_ratio",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "82a7c5c3-d957-4ca8-9b2c-cefdda15e7fe",
+            "sourceColumn": "date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Province/State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d5688d40-7470-46f7-99e4-44f90c751a10",
+            "sourceColumn": "Province/State",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country/Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "77e48dc5-dec5-409a-bab8-f87f65608eab",
+            "sourceColumn": "Country/Region",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last Update",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "7cfec812-29ea-45b4-b581-022222bd2a2c",
+            "sourceColumn": "Last Update",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "97dc7c75-dd42-477e-9f79-155e29180155",
+            "sourceColumn": "latitude",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7112392e-c32f-485f-a7cc-c55b510cd0b2",
+            "sourceColumn": "longitude",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "incidence_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b8779534-183d-40ef-b94f-783cda168205",
+            "sourceColumn": "incidence_rate",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Case-Fatality_Ratio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8c90377f-7d29-4cf8-a416-337ff1fb07f4",
+            "sourceColumn": "Case-Fatality_Ratio",
+            "sourceProviderType": "double",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "c5737fc6-469e-4949-bc47-1051db536c47",
+        "partitions": [
+          {
+            "name": "public covid_data",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"localhost:5432\", \"analista-bi\"),",
+                "    public_covid_data = Source{[Schema=\"public\",Item=\"covid_data\"]}[Data]",
+                "in",
+                "    public_covid_data"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

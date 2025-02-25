@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "fb9302982dfdfe4b2ddb",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"261634d459ab9bf25bff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.261398176291795,\"y\":50.577507598784194,\"z\":0,\"width\":631.2462006079028,\"height\":653.6170212765958,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.country_region\",\"active\":true},{\"queryRef\":\"public covid_data.province_state\"}],\"Y\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"country_region\"},\"Name\":\"public covid_data.country_region\",\"NativeReferenceName\":\"country_region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province_state\"},\"Name\":\"public covid_data.province_state\",\"NativeReferenceName\":\"province_state\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 653.62,
+          "width": 631.25,
+          "x": 26.26,
+          "y": 50.58,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4063617e6a368a76fcca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667,\"y\":338,\"width\":613,\"height\":367,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.province_state\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province_state\"},\"Name\":\"public covid_data.province_state\",\"NativeReferenceName\":\"province_state\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 367.00,
+          "width": 613.00,
+          "x": 667.00,
+          "y": 338.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"93aaf5e50e9b2a69df06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667.2340425531916,\"y\":50.577507598784194,\"z\":1000,\"width\":612.7659574468086,\"height\":286.93009118541033,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"date\"},\"Name\":\"public covid_data.date\",\"NativeReferenceName\":\"date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 286.93,
+          "width": 612.77,
+          "x": 667.23,
+          "y": 50.58,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
