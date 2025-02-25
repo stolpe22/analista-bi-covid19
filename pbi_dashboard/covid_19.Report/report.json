@@ -1,5 +1,6 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY18SU07\",\"version\":\"3.15\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[{\"name\":\"ede0dbcf928642c0b101\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"public covid_data\"}},\"Property\":\"confirmed\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"-302844D\"}}],[{\"Literal\":{\"Value\":\"-3073D\"}}],[{\"Literal\":{\"Value\":\"-34D\"}}],[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -7,8 +8,8 @@
         "disabled": false,
         "items": [
           {
-            "name": "CY24SU10",
-            "path": "BaseThemes/CY24SU10.json",
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
             "type": 202
           }
         ],
@@ -19,39 +20,104 @@
   ],
   "sections": [
     {
+      "config": "{\"type\":1}",
+      "displayName": "tooltip_deaths-recovereds",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 240.00,
+      "name": "e153faf9a42e510a7512",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"65cd2614d06cd247bd46\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":0,\"z\":0,\"width\":280,\"height\":120,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(covid_data.deaths_adjusted)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"deaths_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.deaths_adjusted)\",\"NativeReferenceName\":\"Mortes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"deaths_adjusted\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(covid_data.deaths_adjusted)\":{\"displayName\":\"Mortes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"36D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.00,
+          "width": 280.00,
+          "x": 20.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6de879848a2b14be4fba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":120,\"z\":1000,\"width\":280,\"height\":120,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(covid_data.recovered_adjusted)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"recovered_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.recovered_adjusted)\",\"NativeReferenceName\":\"Recuperados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"recovered_adjusted\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(covid_data.recovered_adjusted)\":{\"displayName\":\"Recuperados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"36D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.00,
+          "width": 280.00,
+          "x": 20.00,
+          "y": 120.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 320.00
+    },
+    {
       "config": "{}",
-      "displayName": "Page 1",
+      "displayName": "Main",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "fb9302982dfdfe4b2ddb",
       "visualContainers": [
         {
-          "config": "{\"name\":\"261634d459ab9bf25bff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.261398176291795,\"y\":50.577507598784194,\"z\":0,\"width\":631.2462006079028,\"height\":653.6170212765958,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.country_region\",\"active\":true},{\"queryRef\":\"public covid_data.province_state\"}],\"Y\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"country_region\"},\"Name\":\"public covid_data.country_region\",\"NativeReferenceName\":\"country_region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province_state\"},\"Name\":\"public covid_data.province_state\",\"NativeReferenceName\":\"province_state\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0bb2d8a283a90f7b4f8c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":165.19187588655302,\"y\":0,\"z\":6000,\"width\":191.69082125603865,\"height\":91.87025534851621}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(covid_data.confirmed_adjusted)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.confirmed_adjusted)\",\"NativeReferenceName\":\"Confirmados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(covid_data.confirmed_adjusted)\":{\"displayName\":\"Confirmados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}},\"parentGroupName\":\"7e35284c0b509c223756\"}",
           "filters": "[]",
-          "height": 653.62,
-          "width": 631.25,
-          "x": 26.26,
-          "y": 50.58,
+          "height": 91.87,
+          "width": 191.69,
+          "x": 165.19,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"261634d459ab9bf25bff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.87601078167116,\"y\":74.17789757412399,\"z\":0,\"width\":631.3746630727762,\"height\":629.6495956873315,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"covid_data.country_region\",\"active\":true},{\"queryRef\":\"covid_data.province_state\"}],\"Y\":[{\"queryRef\":\"Sum(covid_data.confirmed_adjusted)\"},{\"queryRef\":\"Sum(covid_data.deaths_adjusted)\"},{\"queryRef\":\"Sum(covid_data.recovered_adjusted)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"country_region\"},\"Name\":\"covid_data.country_region\",\"NativeReferenceName\":\"País / Região1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"province_state\"},\"Name\":\"covid_data.province_state\",\"NativeReferenceName\":\"Província / Estado\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.confirmed_adjusted)\",\"NativeReferenceName\":\"Confirmados\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"deaths_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.deaths_adjusted)\",\"NativeReferenceName\":\"Mortes\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"recovered_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.recovered_adjusted)\",\"NativeReferenceName\":\"Recuperados\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0}}}]},\"columnProperties\":{\"covid_data.country_region\":{\"displayName\":\"País / Região\"},\"covid_data.province_state\":{\"displayName\":\"Província / Estado\"},\"Sum(covid_data.confirmed_adjusted)\":{\"displayName\":\"Confirmados\"},\"Sum(covid_data.deaths_adjusted)\":{\"displayName\":\"Mortes\"},\"Sum(covid_data.recovered_adjusted)\":{\"displayName\":\"Recuperados\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"ribbonBands\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fillTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"77D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"72D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'e153faf9a42e510a7512'\"}}}}}],\"title\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 629.65,
+          "width": 631.37,
+          "x": 25.88,
+          "y": 74.18,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"4063617e6a368a76fcca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667,\"y\":338,\"width\":613,\"height\":367,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.province_state\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"province_state\"},\"Name\":\"public covid_data.province_state\",\"NativeReferenceName\":\"province_state\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"4063617e6a368a76fcca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667.2340425531916,\"y\":359.87841945288756,\"z\":2000,\"width\":612.7659574468086,\"height\":345.2887537993921,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"covid_data.province_state\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(covid_data.confirmed_adjusted)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"province_state\"},\"Name\":\"covid_data.province_state\",\"NativeReferenceName\":\"Estado / Província\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.confirmed_adjusted)\",\"NativeReferenceName\":\"Confirmados\"}]},\"columnProperties\":{\"covid_data.province_state\":{\"displayName\":\"Estado / Província\"},\"Sum(covid_data.confirmed_adjusted)\":{\"displayName\":\"Confirmados\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapControls\":[{\"properties\":{}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'road'\"}}}}}],\"heatMap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"bubbles\":[{\"properties\":{\"markerRangeType\":{\"expr\":{\"Literal\":{\"Value\":\"'magnitude'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"88D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'___AUTO___'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 367.00,
-          "width": 613.00,
-          "x": 667.00,
-          "y": 338.00,
+          "height": 345.29,
+          "width": 612.77,
+          "x": 667.23,
+          "y": 359.88,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"93aaf5e50e9b2a69df06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667.2340425531916,\"y\":50.577507598784194,\"z\":1000,\"width\":612.7659574468086,\"height\":286.93009118541033,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"public covid_data.date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(public covid_data.confirmed)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"public covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"date\"},\"Name\":\"public covid_data.date\",\"NativeReferenceName\":\"date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"confirmed\"}},\"Function\":0},\"Name\":\"Sum(public covid_data.confirmed)\",\"NativeReferenceName\":\"Sum of confirmed\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"4c3d910737d472bd2ace\",\"layouts\":[{\"id\":0,\"position\":{\"x\":517.5202156334232,\"y\":0,\"z\":4000,\"width\":762.4797843665768,\"height\":68.14016172506739,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"covid_data.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"date\"},\"Name\":\"covid_data.date\",\"NativeReferenceName\":\"Data\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"date\"}}}]},\"columnProperties\":{\"covid_data.date\":{\"displayName\":\"Data\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2020-01-22T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"responsive\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2020-01-22T00:00:00'\"}}}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}}}}]}}}",
           "filters": "[]",
-          "height": 286.93,
-          "width": 612.77,
-          "x": 667.23,
-          "y": 50.58,
+          "height": 68.14,
+          "width": 762.48,
+          "x": 517.52,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7e35284c0b509c223756\",\"layouts\":[{\"id\":0,\"position\":{\"x\":667.9976342503005,\"y\":77.00641106956684,\"z\":6001,\"width\":612.1739130434783,\"height\":273.8925875790568}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0}}",
+          "height": 273.89,
+          "width": 612.17,
+          "x": 668.00,
+          "y": 77.01,
+          "z": 6001.00
+        },
+        {
+          "config": "{\"name\":\"93aaf5e50e9b2a69df06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0.04855721328732047,\"z\":1000,\"width\":612.1739130434783,\"height\":273.84403036576947}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(covid_data.confirmed_adjusted)\"}],\"Category\":[{\"queryRef\":\"covid_data.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"date\"},\"Name\":\"covid_data.date\",\"NativeReferenceName\":\"Data\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"confirmed_adjusted\"}},\"Function\":0},\"Name\":\"Sum(covid_data.confirmed_adjusted)\",\"NativeReferenceName\":\"Confirmados\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"date\"}}}]},\"columnProperties\":{\"Sum(public covid_data.confirmed_adjusted)\":{\"displayName\":\"Confirmados\"},\"Sum(covid_data.confirmed_adjusted)\":{\"displayName\":\"Confirmados\"},\"covid_data.date\":{\"displayName\":\"Data\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"81D\"}}}}}],\"title\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}]}},\"parentGroupName\":\"7e35284c0b509c223756\"}",
+          "filters": "[]",
+          "height": 273.84,
+          "width": 612.17,
+          "x": 0.00,
+          "y": 0.05,
           "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e0e1b4fb041545cd4347\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.87601078167116,\"y\":0,\"z\":3000,\"width\":482.1563342318059,\"height\":68.14016172506739,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"covid_data.Country/Region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"covid_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country/Region\"},\"Name\":\"covid_data.Country/Region\",\"NativeReferenceName\":\"País / Região1\"}]},\"columnProperties\":{\"covid_data.Country/Region\":{\"displayName\":\"País / Região\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.14,
+          "width": 482.16,
+          "x": 25.88,
+          "y": 0.00,
+          "z": 3000.00
         }
       ],
       "width": 1280.00
